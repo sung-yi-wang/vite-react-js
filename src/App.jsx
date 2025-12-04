@@ -18,6 +18,10 @@ export default function Form() {
         onChange={e => setMessage(e.target.value)}
       />
       <button type="submit">Send</button>
+      <button type="button" onClick={() => {
+        setIsSent(false);
+        setMessage('');
+      }}>Reset</button>
     </form>
   );
 }
